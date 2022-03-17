@@ -57,6 +57,10 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
+group :production do
+gem 'pg', '~> 1.2', '>= 1.2.3'
+gem 'rails_12factor', '~> 0.0.3'
+end
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
